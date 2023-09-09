@@ -22,7 +22,6 @@ class Handler(Connect):
                 }
             }
         }
-        print(f'бъем= {volume} | вес= {weight} | total= {weight / volume * 500}')
         response = requests.post(f'{self.url}/{order_id}/positions', headers=self.headers,
                                  json=order_position_data)
 
